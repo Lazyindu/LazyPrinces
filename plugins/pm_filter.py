@@ -156,7 +156,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat = await client.get_chat(grpid)
                     title = chat.title
                 except:
-                    await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
+                    await query.message.edit_text("Make sure i am present in your group!!", quote=True)
                     return await query.answer('🙈 I love you dear LazyDeveloper ♥️')
             else:
                 await query.message.edit_text(

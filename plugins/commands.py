@@ -62,7 +62,7 @@ async def start(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
         except ChatAdminRequired:
-            logger.error("Hey Dear, please make sure that i'm present in your group !")
+            logger.error("Hey Dear, please make sure that i am present in your group !")
             return
         btn = [
             [
